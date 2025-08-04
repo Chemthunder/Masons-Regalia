@@ -40,6 +40,7 @@ public interface RegaliaItems {
             .maxCount(1)
             .fireproof()));
 
+
     static <T extends Item> T create(String name, T item) {
         ITEMS.put(item, MasonsRegalia.id(name));
 

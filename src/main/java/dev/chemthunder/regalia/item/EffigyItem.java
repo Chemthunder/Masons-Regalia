@@ -19,19 +19,22 @@ public class EffigyItem extends Item {
 
     @Override
     public ActionResult useOnEntity(ItemStack stack, PlayerEntity user, LivingEntity entity, Hand hand) {
-       if (user.isSneaking() && entity.getHealth() <= 3.0f) {
-           entity.setHealth(10f);
-           stack.decrement(1);
-           user.giveItemStack(RegaliaItems.BROKEN_EFFIGY.getDefaultStack());
-           user.swingHand(Hand.MAIN_HAND);
-           user.playSound(new SoundEvent(SoundEvents.ITEM_TRIDENT_THUNDER.getId()), 5, 5);
-           entity.teleport(entity.getX() + 75000, entity.getY() + 100, entity.getZ());
-           entity.addStatusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 999999999, 250));
-           entity.addStatusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 999999999, 250));
-           return super.useOnEntity(stack, user, entity, hand);
-       } else {
+        if (entity.getHealth() <= 3.0f) {
+            banishPlayer(user, stack, entity, hand);
+            return ActionResult.PASS;
+        } else {
+            return ActionResult.FAIL;
+        }
+    }
 
-       }
-        return ActionResult.FAIL;
+    public static void banishPlayer(PlayerEntity user, ItemStack stack, LivingEntity entity, Hand hand) {
+            entity.setHealth(10f);
+            stack.decrement(1);
+            user.giveItemStack(RegaliaItems.BROKEN_EFFIGY.getDefaultStack());
+            user.swingHand(Hand.MAIN_HAND);
+            user.playSound(new SoundEvent(SoundEvents.ITEM_TRIDENT_THUNDER.getId()), 5, 5);
+            entity.teleport(entity.getX() + 75000, entity.getY() + 100, entity.getZ());
+            entity.addStatusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 999999999, 250));
+            entity.addStatusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 999999999, 250));
     }
 }
