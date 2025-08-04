@@ -3,9 +3,9 @@
 	"id": "regalia",
 	"version": "${version}",
 	"name": "Mason's Regalia",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Follow the Sunflower Trail",
 	"authors": [
-		"Me!"
+		"Chemthunder (Developer)"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
