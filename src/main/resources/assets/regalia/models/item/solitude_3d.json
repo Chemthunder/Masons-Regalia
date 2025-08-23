@@ -1,0 +1,30 @@
+{
+	"format_version": "1.21.6",
+	"credit": "Made by ArcCM",
+	"parent": "item/handheld",
+	"textures": {
+		"layer0": "regalia:item/solitude_3d"
+	},
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [-167.98, -88.93, -135.16],
+			"translation": [0, 14, 3.25],
+			"scale": [1.75, 1.75, 1]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [68.59, 0.36, 95.04],
+			"translation": [-3.5, -7.25, 6.5],
+			"scale": [1.75, 1.75, 1]
+		},
+		"firstperson_righthand": {
+			"rotation": [-50, -85, 0],
+			"translation": [0, 9.25, 0],
+			"scale": [1.5, 1.5, 1]
+		},
+		"firstperson_lefthand": {
+			"rotation": [-50, 85, 0],
+			"translation": [6.75, 9.25, 6],
+			"scale": [1.5, 1.5, 1]
+		}
+	}
+}

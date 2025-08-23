@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AAA",
+    "ASA",
+    "AOA"
+  ],
+  "key": {
+    "A": {
+      "item": "regalia:essence_piece"
+    },
+    "S": {
+      "item": "minecraft:jukebox"
+    },
+    "O": {
+      "item": "minecraft:obsidian"
+    }
+  },
+  "result": {
+    "item": "regalia:essence_disc",
+    "count": 1
+  }
+}

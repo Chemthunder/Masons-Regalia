@@ -1,0 +1,30 @@
+{
+	"format_version": "1.21.6",
+	"credit": "Made with Blockbench",
+	"parent": "item/handheld",
+	"textures": {
+		"layer0": "regalia:item/crimson_3d"
+	},
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [-40, -90, 0],
+			"translation": [0, 10.5, 1.75],
+			"scale": [2.28, 2.28, 1]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [-40, 90, 0],
+			"translation": [0, 10.5, 1.75],
+			"scale": [2.28, 2.28, 1]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, -90, 25],
+			"translation": [1.13, 4.7, 1.63],
+			"scale": [1.27, 1.27, 1]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, 90, -25],
+			"translation": [1.13, 4.7, 1.63],
+			"scale": [1.27, 1.27, 1]
+		}
+	}
+}

@@ -1,0 +1,17 @@
+{
+	"required": true,
+	"package": "dev.chemthunder.regalia.mixin",
+	"compatibilityLevel": "JAVA_17",
+	"mixins": [
+		"ItemRendererAccessor",
+		"ModelLoaderMixin",
+		"ItemRendererMixin",
+        "PlayerEntityMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}

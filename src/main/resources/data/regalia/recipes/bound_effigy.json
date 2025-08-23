@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "regalia:broken_effigy"
+  },
+  "addition": {
+    "item": "minecraft:gilded_blackstone"
+  },
+  "result": {
+    "item": "regalia:bound_effigy",
+    "count": 1
+  }
+}

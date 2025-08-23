@@ -1,0 +1,28 @@
+{
+  "item.regalia.helianthi": "Helianthi",
+
+  "item.regalia.sundered_effigy": "Sundered Effigy",
+  "item.regalia.broken_effigy": "Broken Sundered Effigy",
+
+  "item.regalia.essence_disc": "Music Disc",
+  "item.regalia.essence_disc.desc": "Essence",
+
+  "item.regalia.frostbearer": "Frostbearer",
+
+  "item.regalia.essence_piece": "Disc Fragment",
+  "item.regalia.essence_piece.desc": "Music Disc - Essence",
+
+  "item.regalia.skarlet_promise": "Skarlet Promise",
+
+  "item.regalia.sirens_call": "Siren's Call",
+
+  "item.regalia.greatest_foe": "Greatest Foe",
+
+  "item.regalia.bound_effigy": "Bound Effigy",
+
+  "item.regalia.solitude": "Solitude",
+
+  "itemGroup.regalia.mason": "§eMason's Regalia",
+
+  "item.regalia.crimson": "Crimson Obituary"
+}
