@@ -82,7 +82,7 @@ public interface RegaliaItems {
             .group(RegaliaItemGroup.MASON)
             .fireproof()
             .rarity(Rarity.UNCOMMON)
-            ));
+    ));
 
     Item WAYSTONE = create("waystone", new WaystoneItem(ToolMaterials.IRON, 6, -2.4f, new FabricItemSettings()
             .maxCount(1)
@@ -112,6 +112,22 @@ public interface RegaliaItems {
     Item LANCER_CAUTION_SIGN = create("lancer_caution_sign", new LancerCautionSignItem(ToolMaterials.IRON, 8, -2.1f, new FabricItemSettings()
             .maxCount(1)
             .rarity(Rarity.UNCOMMON)
+    ));
+
+    Item FUMI_SCYTHE = create("fumi_scythe", new FumiScytheItem(ToolMaterials.IRON, 6, -2.6f, new FabricItemSettings()
+            .maxCount(1)
+            .group(RegaliaItemGroup.MASON)
+    ));
+
+    Item RIFTED_EYE = create("rifted_eye", new Item(new FabricItemSettings()
+            .maxCount(1)
+            .group(RegaliaItemGroup.MASON)
+    ));
+
+    Item RIFTED_LONGSWORD = create("rifted_longsword", new RiftedLongswordItem(ToolMaterials.DIAMOND, 5, -2.7f, new FabricItemSettings()
+            .maxCount(1)
+            .group(RegaliaItemGroup.MASON)
+            .rarity(Rarity.EPIC)
     ));
 
     static <T extends Item> T create(String name, T item) {

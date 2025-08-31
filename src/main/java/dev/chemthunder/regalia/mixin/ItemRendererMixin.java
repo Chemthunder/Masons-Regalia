@@ -52,6 +52,14 @@ public abstract class ItemRendererMixin {
         if (stack.isOf(RegaliaItems.CAUTION_SIGN) && renderMode != ModelTransformation.Mode.GUI && renderMode != ModelTransformation.Mode.GROUND) {
             return ((ItemRendererAccessor) this).mccourse$getModels().getModelManager().getModel(new ModelIdentifier(MasonsRegalia.MOD_ID, "caution_sign_3d", "inventory"));
         }
+
+        if (stack.isOf(RegaliaItems.FUMI_SCYTHE) && renderMode != ModelTransformation.Mode.GUI && renderMode != ModelTransformation.Mode.GROUND) {
+            return ((ItemRendererAccessor) this).mccourse$getModels().getModelManager().getModel(new ModelIdentifier(MasonsRegalia.MOD_ID, "fumi_scythe_3d", "inventory"));
+        }
+
+        if (stack.isOf(RegaliaItems.RIFTED_LONGSWORD) && renderMode != ModelTransformation.Mode.GUI && renderMode != ModelTransformation.Mode.GROUND) {
+            return ((ItemRendererAccessor) this).mccourse$getModels().getModelManager().getModel(new ModelIdentifier(MasonsRegalia.MOD_ID, "rifted_longsword_3d", "inventory"));
+        }
         return value;
     }
 }

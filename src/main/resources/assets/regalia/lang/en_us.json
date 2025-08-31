@@ -19,7 +19,7 @@
   "item.regalia.bound_effigy": "Bound Effigy",
 
   "item.regalia.solitude": "Solitude",
-  "item.regalia.solitude.desc": "Solitude desc",
+  "item.regalia.solitude.desc": "A relic of what once was. A reminder. Never again.",
 
   "itemGroup.regalia.mason": "§eMason's Regalia",
 
@@ -32,7 +32,16 @@
   "item.regalia.caution_sign.desc": "Be aware of traffic my ass",
 
   "item.regalia.lancer_caution_sign": "Caution Sign",
-  "item.regalia.lancer_caution_sign.desc": "consume"
+  "item.regalia.lancer_caution_sign.desc": "consume",
+
+  "item.regalia.fumi_scythe": "Farmer's Scythe",
+  "item.regalia.fumi_scythe.desc": "Forged by Chemthunder as a gift to Fumii",
+
+  "item.regalia.soulflame_spear": "Soulflame Spear",
+  "item.regalia.rifted_eye": "Rifted Eye",
+
+  "item.regalia.rifted_longsword": "Blade of the Rifted One",
+  "item.regalia.rifted_longsword.desc": "True rifted energy."
 
 
 }
