@@ -16,13 +16,23 @@
 
   "item.regalia.sirens_call": "Siren's Call",
 
-  "item.regalia.greatest_foe": "Greatest Foe",
-
   "item.regalia.bound_effigy": "Bound Effigy",
 
   "item.regalia.solitude": "Solitude",
+  "item.regalia.solitude.desc": "Solitude desc",
 
   "itemGroup.regalia.mason": "§eMason's Regalia",
 
-  "item.regalia.crimson": "Crimson Obituary"
+  "item.regalia.crimson": "Crimson Obituary",
+  "item.regalia.crimson.desc": "A cold promise to a higher being.",
+
+  "item.regalia.resonant_nail": "Resonant Nail",
+
+  "item.regalia.caution_sign": "Caution Sign",
+  "item.regalia.caution_sign.desc": "Be aware of traffic my ass",
+
+  "item.regalia.lancer_caution_sign": "Caution Sign",
+  "item.regalia.lancer_caution_sign.desc": "consume"
+
+
 }

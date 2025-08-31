@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " QS",
+    "LNQ",
+    "BL "
+  ],
+  "key": {
+    "Q": "minecraft:quartz",
+    "N": [
+      "minecraft:soul_sand",
+      "minecraft:soul_soil"
+    ],
+    "B": "minecraft:nether_brick",
+    "L": "minecraft:soul_lantern",
+    "S": "minecraft:netherite_scrap"
+  },
+  "result": {
+    "id": "regalia:soulflame_spear",
+    "count": 1
+  },
+  "show_notification": false
+}

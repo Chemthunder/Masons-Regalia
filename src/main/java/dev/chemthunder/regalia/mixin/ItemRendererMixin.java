@@ -40,6 +40,18 @@ public abstract class ItemRendererMixin {
         if (stack.isOf(RegaliaItems.CRIMSON_OBITUARY) && renderMode != ModelTransformation.Mode.GUI && renderMode != ModelTransformation.Mode.GROUND) {
             return ((ItemRendererAccessor) this).mccourse$getModels().getModelManager().getModel(new ModelIdentifier(MasonsRegalia.MOD_ID, "crimson_3d", "inventory"));
         }
+
+        if (stack.isOf(RegaliaItems.RESONANT_NAIL) && renderMode != ModelTransformation.Mode.GUI && renderMode != ModelTransformation.Mode.GROUND) {
+            return ((ItemRendererAccessor) this).mccourse$getModels().getModelManager().getModel(new ModelIdentifier(MasonsRegalia.MOD_ID, "resonant_nail_3d", "inventory"));
+        }
+
+        if (stack.isOf(RegaliaItems.SOULFLAME_SPEAR) && renderMode != ModelTransformation.Mode.GUI && renderMode != ModelTransformation.Mode.GROUND) {
+            return ((ItemRendererAccessor) this).mccourse$getModels().getModelManager().getModel(new ModelIdentifier(MasonsRegalia.MOD_ID, "soulflame_spear_3d", "inventory"));
+        }
+
+        if (stack.isOf(RegaliaItems.CAUTION_SIGN) && renderMode != ModelTransformation.Mode.GUI && renderMode != ModelTransformation.Mode.GROUND) {
+            return ((ItemRendererAccessor) this).mccourse$getModels().getModelManager().getModel(new ModelIdentifier(MasonsRegalia.MOD_ID, "caution_sign_3d", "inventory"));
+        }
         return value;
     }
 }

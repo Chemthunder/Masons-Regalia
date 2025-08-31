@@ -36,7 +36,7 @@ public class HelianthiItem extends SwordItem {
                     new EntityAttributeModifier(
                             UUID.fromString("a67e3cc0-45d5-4e8e-9d64-7421e1b5fe3e"),
                             "Additional range",
-                            0.5,
+                            1.0,
                             EntityAttributeModifier.Operation.ADDITION
                     )
             );
@@ -46,4 +46,6 @@ public class HelianthiItem extends SwordItem {
 
         return super.getAttributeModifiers(slot);
     }
+
+
 }

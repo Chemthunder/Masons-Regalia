@@ -36,5 +36,8 @@ public abstract class ModelLoaderMixin {
         this.addModel(new ModelIdentifier(MasonsRegalia.MOD_ID, "solitude_3d", "inventory"));
         this.addModel(new ModelIdentifier(MasonsRegalia.MOD_ID, "frostbearer_3d", "inventory"));
         this.addModel(new ModelIdentifier(MasonsRegalia.MOD_ID, "crimson_3d", "inventory"));
+        this.addModel(new ModelIdentifier(MasonsRegalia.MOD_ID, "resonant_nail_3d", "inventory"));
+        this.addModel(new ModelIdentifier(MasonsRegalia.MOD_ID, "soulflame_spear_3d", "inventory"));
+        this.addModel(new ModelIdentifier(MasonsRegalia.MOD_ID, "caution_sign_3d", "inventory"));
     }
 }

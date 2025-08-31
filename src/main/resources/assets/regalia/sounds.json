@@ -1,0 +1,8 @@
+{
+  "item.splat": {
+    "sounds": [
+      "regalia:item/splat"
+    ],
+    "subtitle": "regalia.subtitles.item.splat"
+  }
+}

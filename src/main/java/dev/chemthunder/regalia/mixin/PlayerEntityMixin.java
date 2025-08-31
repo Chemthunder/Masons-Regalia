@@ -1,5 +1,7 @@
 package dev.chemthunder.regalia.mixin;
 
+import dev.chemthunder.regalia.item.CautionSignItem;
+import dev.chemthunder.regalia.item.NailItem;
 import dev.chemthunder.regalia.item.SolitudeItem;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
@@ -42,8 +44,14 @@ public abstract class PlayerEntityMixin extends LivingEntity {
                 );
 
             }
+        }
 
+        if (stack.getItem() instanceof NailItem item) {
+            if (target instanceof LivingEntity living) {
+                player.setVelocity(target.getVelocity().x, 1.25, target.getVelocity().z);
+                player.velocityModified = true;
 
+            }
         }
     }
 }

@@ -6,16 +6,8 @@ import com.jamieswhiteshirt.reachentityattributes.ReachEntityAttributes;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.attribute.EntityAttribute;
 import net.minecraft.entity.attribute.EntityAttributeModifier;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.entity.projectile.FireballEntity;
-import net.minecraft.entity.projectile.thrown.SnowballEntity;
-import net.minecraft.item.ItemStack;
 import net.minecraft.item.SwordItem;
 import net.minecraft.item.ToolMaterial;
-import net.minecraft.util.Hand;
-import net.minecraft.util.TypedActionResult;
-import net.minecraft.util.math.Vec3d;
-import net.minecraft.world.World;
 
 import java.util.UUID;
 

@@ -2,7 +2,9 @@ package dev.chemthunder.regalia;
 
 import dev.chemthunder.regalia.init.RegaliaItems;
 import net.fabricmc.api.ModInitializer;
+import net.minecraft.sound.SoundEvent;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.registry.Registry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -14,9 +16,13 @@ public class MasonsRegalia implements ModInitializer {
 
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
+    public static final Identifier SPLAT_ID = new Identifier("regalia:splat");
+    public static SoundEvent SPLAT = new SoundEvent(SPLAT_ID);
+
 	@Override
 	public void onInitialize() {
 		RegaliaItems.initialize();
+        Registry.register(Registry.SOUND_EVENT, MasonsRegalia.SPLAT_ID, SPLAT);
         LOGGER.info("This message means Mason's Regalia is working");
 	}
 }
