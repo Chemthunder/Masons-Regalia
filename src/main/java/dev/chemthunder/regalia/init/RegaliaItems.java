@@ -103,13 +103,13 @@ public interface RegaliaItems {
             .rarity(Rarity.RARE)
     ));
 
-    Item CAUTION_SIGN = create("caution_sign", new CautionSignItem(ToolMaterials.IRON, 6, -2.7f, new FabricItemSettings()
+    Item CAUTION_SIGN = create("caution_sign", new CautionSignItem(ToolMaterials.IRON, -2, -2.7f, new FabricItemSettings()
             .maxCount(1)
             .group(RegaliaItemGroup.MASON)
             .rarity(Rarity.UNCOMMON)
     ));
 
-    Item LANCER_CAUTION_SIGN = create("lancer_caution_sign", new LancerCautionSignItem(ToolMaterials.IRON, 8, -2.1f, new FabricItemSettings()
+    Item LANCER_CAUTION_SIGN = create("lancer_caution_sign", new LancerCautionSignItem(ToolMaterials.IRON, -2, -2.1f, new FabricItemSettings()
             .maxCount(1)
             .rarity(Rarity.UNCOMMON)
     ));
