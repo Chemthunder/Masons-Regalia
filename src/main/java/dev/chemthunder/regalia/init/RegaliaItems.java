@@ -84,7 +84,7 @@ public interface RegaliaItems {
             .rarity(Rarity.UNCOMMON)
     ));
 
-    Item WAYSTONE = create("waystone", new WaystoneItem(ToolMaterials.IRON, 6, -2.4f, new FabricItemSettings()
+    Item WAYSTONE = create("waystone", new WaystoneItem(ToolMaterials.IRON, 7, -3.0f, new FabricItemSettings()
             .maxCount(1)
             .group(RegaliaItemGroup.MASON)
             .fireproof()
