@@ -88,6 +88,7 @@ public interface RegaliaItems {
             .maxCount(1)
             .group(RegaliaItemGroup.MASON)
             .fireproof()
+            .rarity(Rarity.RARE)
     ));
 
     Item RESONANT_NAIL = create("resonant_nail", new NailItem(ToolMaterials.GOLD, 6, -2.4f, new FabricItemSettings()

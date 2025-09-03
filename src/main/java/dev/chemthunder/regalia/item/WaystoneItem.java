@@ -4,6 +4,7 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.SwordItem;
 import net.minecraft.item.ToolMaterial;
+import net.minecraft.text.Text;
 
 public class WaystoneItem extends SwordItem {
     public WaystoneItem(ToolMaterial toolMaterial, int attackDamage, float attackSpeed, Settings settings) {
