@@ -3,7 +3,6 @@ package dev.chemthunder.regalia.init;
 import dev.chemthunder.regalia.MasonsRegalia;
 import dev.chemthunder.regalia.item.*;
 import dev.chemthunder.regalia.item.FrostbearerItem;
-import dev.chemthunder.regalia.item.HelianthiItem;
 import dev.chemthunder.regalia.item.SkarletItem;
 import dev.chemthunder.regalia.item.SolitudeItem;
 import dev.chemthunder.regalia.item.skin.LancerCautionSignItem;
@@ -18,14 +17,7 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 public interface RegaliaItems {
-
-
     Map<Item, Identifier> ITEMS = new LinkedHashMap<>();
-
-    Item HELIANTHI = create("helianthi", new HelianthiItem(ToolMaterials.NETHERITE, 5, -3f, new  FabricItemSettings()
-            .fireproof()
-            .rarity(Rarity.UNCOMMON)
-            .group(RegaliaItemGroup.MASON)));
 
     Item SUNDERED_EFFIGY = create("sundered_effigy", new Item(new FabricItemSettings()
             .maxCount(1)
@@ -130,6 +122,7 @@ public interface RegaliaItems {
             .group(RegaliaItemGroup.MASON)
             .rarity(Rarity.EPIC)
     ));
+
 
     static <T extends Item> T create(String name, T item) {
         ITEMS.put(item, MasonsRegalia.id(name));
