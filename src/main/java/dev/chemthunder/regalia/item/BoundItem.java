@@ -26,8 +26,6 @@ public class BoundItem extends SwordItem {
                 player.damage(RegaliaDamageSources.SOL,
                         2f);
 
-                player.playSound(SoundEvents.BLOCK_FIRE_AMBIENT, 1, 0);
-
                 player.sendMessage(Text.translatable("text.item_burning")
                         .setStyle(Style.EMPTY.withColor(0xad1359)
                         ), true);

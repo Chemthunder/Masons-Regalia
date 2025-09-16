@@ -43,5 +43,7 @@
   "item.regalia.rifted_longsword": "Blade of the Rifted One",
   "item.regalia.rifted_longsword.desc": "True rifted energy.",
 
-  "item.regalia.waystone": "Waystone"
+  "item.regalia.waystone": "Waystone",
+
+  "text.item_burning": "Your hands heat up to a dangerous degree"
 }
