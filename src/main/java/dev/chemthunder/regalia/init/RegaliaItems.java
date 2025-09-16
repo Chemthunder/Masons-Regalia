@@ -22,12 +22,14 @@ public interface RegaliaItems {
     Item SUNDERED_EFFIGY = create("sundered_effigy", new Item(new FabricItemSettings()
             .maxCount(1)
             .fireproof()
-            .group(RegaliaItemGroup.MASON)));
+            .group(RegaliaItemGroup.MASON)
+    ));
 
     Item BROKEN_EFFIGY = create("broken_effigy", new Item(new FabricItemSettings()
             .fireproof()
             .group(RegaliaItemGroup.MASON)
-            .maxCount(1)));
+            .maxCount(1)
+    ));
 
 
     Item SKARLET_PROMISE = create("skarlet_promise", new SkarletItem(ToolMaterials.GOLD, 8, -2.6f, new FabricItemSettings()
@@ -58,12 +60,15 @@ public interface RegaliaItems {
     Item FOLLYSCYTHE = create("sirens_call", new FollyScytheItem(ToolMaterials.NETHERITE, 4, -2.6f, new FabricItemSettings()
             .group(RegaliaItemGroup.MASON)
             .rarity(Rarity.EPIC)
-            .fireproof()));
+            .fireproof()
+    ));
 
     Item BOUND_EFFIGY = create("bound_effigy", new BoundItem(ToolMaterials.NETHERITE, 1, -2.3f, new FabricItemSettings()
             .fireproof()
             .rarity(Rarity.UNCOMMON)
-            .maxDamage(1)));
+            .maxDamage(1)
+            .group(RegaliaItemGroup.MASON)
+    ));
 
     Item SOLITUDE = create("solitude", new SolitudeItem(ToolMaterials.NETHERITE, 4, -2.8f, new FabricItemSettings()
             .rarity(Rarity.UNCOMMON)

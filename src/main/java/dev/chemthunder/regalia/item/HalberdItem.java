@@ -3,16 +3,21 @@ package dev.chemthunder.regalia.item;
 import com.google.common.collect.ImmutableMultimap;
 import com.google.common.collect.Multimap;
 import com.jamieswhiteshirt.reachentityattributes.ReachEntityAttributes;
+import dev.chemthunder.regalia.init.RegaliaDamageSources;
 import net.minecraft.client.item.TooltipContext;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.attribute.EntityAttribute;
 import net.minecraft.entity.attribute.EntityAttributeModifier;
+import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.SwordItem;
 import net.minecraft.item.ToolMaterial;
+import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.MutableText;
+import net.minecraft.text.Style;
 import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
 import net.minecraft.world.World;
@@ -28,7 +33,7 @@ public class HalberdItem extends SwordItem {
 
     @Override
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
-    target.setVelocity(attacker.getRotationVec(0).multiply(-1.5));
+        target.setVelocity(attacker.getRotationVec(0).multiply(-1.5));
 
         ((PlayerEntity)target).setVelocity(attacker.getRotationVec(0).multiply(-0.5));
         return super.postHit(stack, target, attacker);
@@ -62,5 +67,25 @@ public class HalberdItem extends SwordItem {
         }
 
         return super.getAttributeModifiers(slot);
+    }
+
+    @Override
+    public void inventoryTick(ItemStack stack, World world, Entity entity, int slot, boolean selected) {
+        if (entity instanceof PlayerEntity player) {
+            ItemStack stackMain = player.getMainHandStack();
+            ItemStack offStack = player.getOffHandStack();
+
+            if (stackMain.isOf(this) || offStack.isOf(this)) {
+                player.damage(RegaliaDamageSources.SOL,
+                        2f);
+
+                player.playSound(SoundEvents.BLOCK_FIRE_AMBIENT, 1, 0);
+
+                player.sendMessage(Text.translatable("text.item_burning")
+                        .setStyle(Style.EMPTY.withColor(0xad1359)
+                        ), true);
+            }
+        }
+        super.inventoryTick(stack, world, entity, slot, selected);
     }
 }
